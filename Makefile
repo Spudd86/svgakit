@@ -21,7 +21,7 @@ ARFLAGS    := rs
 TASM_FLAGS := /t /z /zi /mx /D__FLAT__ /DDJGPP /DFPU387 /iINCLUDE
 
 
-SVGAKIT_OBJECTS := vesavbe.o svgasdk.o vbeaf.o font8x16.o vgapal.o cpu.o \
+SVGAKIT_OBJECTS := vesavbe.o svgasdk.o vbeaf.o font8x16.o vgapal.o gtfcalc.o cpu.o \
                   _svgasdk.o _linsdk.o _vbeaf.o \
                    event.o maskcode.o _event.o
 SVGAKIT_OBJECTS := $(addprefix svgakit/, $(SVGAKIT_OBJECTS))
