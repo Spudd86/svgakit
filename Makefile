@@ -51,7 +51,7 @@ clean:
 	
 	
 svgakit.a: $(SVGAKIT_OBJECTS) $(PMODE_OBJECTS)
-	@echo AR $<
-	@$(AR) $(ARFLAGS) $@ $<
+	@echo AR $@
+	$(AR) $(ARFLAGS) $@ $^
 
 	
